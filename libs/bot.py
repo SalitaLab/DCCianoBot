@@ -5,7 +5,7 @@
 #   2- Import bot into bots/__init__.py
 #   3- Add the bot to the array inside main.py
 
-# ****** Remember that your bot MUST implement the check and act methods ******
+# ****** Remember that your bot MUST implement the readyToAct and act methods ******
 class Bot:
     #init bot
     def __init__(self):
@@ -15,8 +15,8 @@ class Bot:
     def act(self, msg, bot):
         return
 
-    # If check returns true then the bot will call the act method. False means that the bot isnt ready to act. This method is called randomly between all available bots.
-    def check(self):
+    # If readyToAct returns true then the bot will call the act method. False means that the bot isnt ready to act. This method is called randomly between all available bots.
+    def readyToAct(self):
         return
 
     # This function will be called everytime the Main bot receives a message in case you want to hold information to use in the future.

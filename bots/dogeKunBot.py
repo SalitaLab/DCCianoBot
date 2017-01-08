@@ -22,6 +22,6 @@ class DogeKunBot(Bot):
         content_type, chat_type, chat_id = telepot.glance(msg)
         bot.sendMessage(chat_id, self.DCC_reference + ' : ' + random.choice(self.frases), reply_to_message_id=msg['message_id'])
 
-    # Defining check function
-    def check(self):
+    # Defining readyToAct function
+    def readyToAct(self):
         return True #Always ready to act

@@ -25,8 +25,8 @@ class RashinshiBot(Bot):
         self.holding_question = False
         self.msg_counter = 0
 
-    # Defining check function
-    def check(self):
+    # Defining readyToAct function
+    def readyToAct(self):
         # ready to act after x number of messages
         if self.msg_counter >= self.max_counter and self.holding_question:
             return True

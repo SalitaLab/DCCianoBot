@@ -167,6 +167,6 @@ class DiggoBot(Bot):
         bot.sendSticker(chat_id = chat_id, sticker = random.choice(self.stickers), reply_to_message_id=msg['message_id'])
 
 
-    # Defining check function
-    def check(self):
+    # Defining readyToAct function
+    def readyToAct(self):
         return True #Always ready to act

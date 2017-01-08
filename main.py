@@ -16,7 +16,7 @@ def handle(msg):
     random.shuffle(bot_list)
     for random_bot in bot_list:
         # Random bot response if it's ready to act
-        if random_bot.check():
+        if random_bot.readyToAct():
             random_bot.act(msg, bot)
             break
 
