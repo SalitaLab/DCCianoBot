@@ -14,3 +14,7 @@ class JaevBot(Bot):
         # How to get info of the message
         content_type, chat_type, chat_id = telepot.glance(msg)
         bot.sendMessage(chat_id, self.DCC_reference + ' : aki io comiendo ' + random.choice(self.comida))
+
+    # Defining check function
+    def check(self):
+        return True #Always ready to act

@@ -9,7 +9,7 @@ class DogeKunBot(Bot):
 
     # Initializing variables
     def __init__(self):
-        self.DCC_reference = "@doge_kun"
+        self.DCC_reference = "doge"
         self.frases = ['/legalicenalasde15', 'el problema es que soy gay', 'esta mas muerto que la tula de jaime guzman', 'si no la probay como vay a saber si te gusta', 'porque la tengo chica, por eso',
         'esa huea es de maricones po', 'oye comi, eri pan-fleto?', 'sabias que la vaca babea mas de 100 litros por dia?', 'sono toori da', 'そのとおりです。', 'y tu mama conchetumadre? tu mama tmb es un bot',
         'mami no le di color, empresta loh kcht', 'es que varas es autonomo, por eso trabaja gratis', 'las polillas son fuente de nutrientes', 'lo dije una vez que estaba muy curado', 'naru hodo', 'Como esos monos chinos qls gays?',
@@ -21,3 +21,7 @@ class DogeKunBot(Bot):
         # How to get info of the message
         content_type, chat_type, chat_id = telepot.glance(msg)
         bot.sendMessage(chat_id, self.DCC_reference + ' : ' + random.choice(self.frases), reply_to_message_id=msg['message_id'])
+
+    # Defining check function
+    def check(self):
+        return True #Always ready to act

@@ -7,7 +7,7 @@ class DiggoBot(Bot):
 
     # Initializing variables
     def __init__(self):
-        self.DCC_reference = "@diggo90"
+        self.DCC_reference = "diggo"
         self.stickers = ['BQADAQADIgEAAtpvQgjYhzUC2GRFpQI',
                          'BQADBAADTAADqAABTgXzVqN6dJUIXwI',
                          'BQADBAADTgADqAABTgVwAsJg5JF13gI',
@@ -165,3 +165,8 @@ class DiggoBot(Bot):
         # How to get info of the message
         content_type, chat_type, chat_id = telepot.glance(msg)
         bot.sendSticker(chat_id = chat_id, sticker = random.choice(self.stickers), reply_to_message_id=msg['message_id'])
+
+
+    # Defining check function
+    def check(self):
+        return True #Always ready to act
