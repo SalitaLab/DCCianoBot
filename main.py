@@ -1,10 +1,11 @@
 import time
 import telepot
 import random
-from bots import dogeKunBot, jaevBot
+from bots import *
+#from bots import dogeKunBot, jaevBot, diggoBot
 from settings import TOKEN
 
-bot_list = [dogeKunBot.DogeKunBot(), jaevBot.JaevBot(), ]
+bot_list = [dogeKunBot.DogeKunBot(), jaevBot.JaevBot(), diggoBot.DiggoBot()]
 
 def handle(msg):
     # Message info

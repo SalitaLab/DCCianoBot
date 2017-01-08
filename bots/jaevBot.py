@@ -9,7 +9,7 @@ class JaevBot(Bot):
         self.DCC_reference = "jaev"
         self.comida = ["papa juan", "completos", "hamburguesas", "pizzas", "sushi", "shawarma", "con la familia", "papas fritas"]
 
-    # Definig act function
+    # Defining act function
     def act(self, msg, bot):
         # How to get info of the message
         content_type, chat_type, chat_id = telepot.glance(msg)

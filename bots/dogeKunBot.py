@@ -13,7 +13,7 @@ class DogeKunBot(Bot):
         'ahhh! se escucha como la tula!', 'ambar con tula o hiho con vagina?', 'pero que paja esa weaaaaa', 'estoy hecho concha wn', 'te pusiste fleto wn, la cagai', 'puta la weona feminazi... me triguereai', 'y si me pesco a tu mama?', 'el sexo anal no es sexo',
         'aweonao conchetumare', 'aborto ajajaj que buen apellido', 'menos mal voté por la une', 'mi familia es evangelica y no cree en la evolucion', 'Curao si, curiao no', 'No me gustan los panes :(']
 
-    # Definig act function
+    # Defining act function
     def act(self, msg, bot):
         # How to get info of the message
         content_type, chat_type, chat_id = telepot.glance(msg)

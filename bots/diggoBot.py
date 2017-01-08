@@ -3,7 +3,7 @@ import telepot
 import random
 from libs.bot import Bot
 
-class DogeKunBot(Bot):
+class DiggoBot(Bot):
 
     # Initializing variables
     def __init__(self):
@@ -160,7 +160,7 @@ class DogeKunBot(Bot):
                          'BQADAQADnQADu4fbBdm0u9irMkn-Ag'
                         ]
 
-    # Definig act function
+    # Defining act function
     def act(self, msg, bot):
         # How to get info of the message
         content_type, chat_type, chat_id = telepot.glance(msg)
