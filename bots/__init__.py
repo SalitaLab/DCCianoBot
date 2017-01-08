@@ -1,3 +1,3 @@
-from dogeKunBot import *
-from diggoBot import *
-from jaevBot import *
+from bots.dogeKunBot import *
+from bots.diggoBot import *
+from bots.jaevBot import *
